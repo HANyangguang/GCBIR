@@ -20,17 +20,23 @@ You can launch the system just by running two python scripts.
 
 ## Usage
 Clone the code and install libraries
+'''bash
 $ git clone https://github.com/HANyangguang/GCBIR.git
 $ cd GCBIR
 $ pip(3) install -r requirements.txt
+'''
 
 Put your image files (*.jpg) on static/dataset
+
+'''bash
 $ python offline.py
+'''
 Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature
 Note that it takes time for the first time because Keras downloads the VGG weights.
-
+'''bash
 $ export FLASK_APP=server.py
 $ flask run --without-threads
+'''
 Now you can do the search via localhost:5000
 
 
@@ -46,6 +52,6 @@ Now you can do the search via localhost:5000
 ### v0
 Original source at sis: https://github.com/matsui528/sis
 ### v1
-Add annoy(approximate nearest neighbor, oh yeah!), speed up the query time extremely. and undate the dataset incluing [Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/), [Book Covers Dataset](https://www.kaggle.com/lukaanicin/book-covers-dataset), totally 64,251 images. 
+Add annoy(approximate nearest neighbor, oh yeah!), speed up the query time extremely. and update the dataset incluing [Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/), [Book Covers Dataset](https://www.kaggle.com/lukaanicin/book-covers-dataset), totally 64,251 images. 
 ### todo 
 dimensional reducion of the 4096 featurs without losing much information.
