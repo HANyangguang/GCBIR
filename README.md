@@ -31,8 +31,7 @@ Put your image files (*.jpg) on static/dataset
 ```bash
 $ python offline.py
 ```
-Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature
-Note that it takes time for the first time because Keras downloads the VGG weights.
+Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature. Note that it takes time for the first time because Keras downloads the VGG weights.
 ```bash
 $ export FLASK_APP=server.py
 $ flask run --without-threads
@@ -49,9 +48,9 @@ Now you can do the search via localhost:5000
     }
 
 ## Version note
-### v0
-Original source at sis: https://github.com/matsui528/sis
+### v0 & acknowledgment
+Original source at sis: https://github.com/matsui528/sis thanks, matsui528!
 ### v1
 Add annoy(approximate nearest neighbor, oh yeah!), speed up the query time extremely. and update the dataset incluing [Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/), [Book Covers Dataset](https://www.kaggle.com/lukaanicin/book-covers-dataset), totally 64,251 images. 
 ### todo 
-dimensional reducion of the 4096 featurs without losing much information.
+dimensional reducion of the 4096d feature without losing much information.
