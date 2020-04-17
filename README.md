@@ -20,23 +20,23 @@ You can launch the system just by running two python scripts.
 
 ## Usage
 Clone the code and install libraries
-'''bash
+```bash
 $ git clone https://github.com/HANyangguang/GCBIR.git
 $ cd GCBIR
 $ pip(3) install -r requirements.txt
-'''
+```
 
 Put your image files (*.jpg) on static/dataset
 
-'''bash
+```bash
 $ python offline.py
-'''
+```
 Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature
 Note that it takes time for the first time because Keras downloads the VGG weights.
-'''bash
+```bash
 $ export FLASK_APP=server.py
 $ flask run --without-threads
-'''
+```
 Now you can do the search via localhost:5000
 
 
