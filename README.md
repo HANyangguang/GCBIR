@@ -19,20 +19,19 @@ You can launch the system just by running two python scripts.
 - [Tutorial](https://ourcodeworld.com/articles/read/981/how-to-implement-an-image-search-engine-using-keras-tensorflow-with-python-3-in-ubuntu-18-04) and [Video](https://www.youtube.com/watch?v=Htu7b8PUyRg) by [@sdkcarlos](https://github.com/sdkcarlos)
 
 ## Usage
-# Clone the code and install libraries
-$ git clone 
-$ cd 
-$ pip install -r requirements.txt
+Clone the code and install libraries
+$ git clone https://github.com/HANyangguang/GCBIR.git
+$ cd GCBIR
+$ pip(3) install -r requirements.txt
 
-# Put your image files (*.jpg) on static/dataset
-
+Put your image files (*.jpg) on static/dataset
 $ python offline.py
-# Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature
-# Note that it takes time for the first time because Keras downloads the VGG weights.
+Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature
+Note that it takes time for the first time because Keras downloads the VGG weights.
 
 $ export FLASK_APP=server.py
 $ flask run --without-threads
-# Now you can do the search via localhost:5000
+Now you can do the search via localhost:5000
 
 
 ## Citation
@@ -40,7 +39,7 @@ $ flask run --without-threads
     @misc{GCBIR,
 	    author = {Yangguang Han},
 	    title = {GCBIR: Generic Content-based Image Retrieval System},
-	    howpublished = {\url{#}}
+	    howpublished = {\url{https://github.com/HANyangguang/GCBIR}}
     }
 
 ## Version note
