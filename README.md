@@ -31,6 +31,13 @@ Put your image files (*.jpg) on static/dataset
 ```bash
 $ python offline.py
 ```
+
+Update dirs
+```bash
+$ mkdir static/feature
+$ mkdir static/uploaded
+```
+
 Then featuress of images in database are extracted and indexed by annoy, finally saved on static/feature. Note that it takes time for the first time because Keras downloads the VGG weights.
 ```bash
 $ export FLASK_APP=server.py
