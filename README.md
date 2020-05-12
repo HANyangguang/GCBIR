@@ -45,6 +45,10 @@ $ flask run --without-threads
 ```
 Now you can do the search via localhost:5000
 
+## Acknowledgment
+[ANNOY](https://github.com/spotify/annoy)
+[VGG16](https://arxiv.org/abs/1409.1556)
+[Flask](https://github.com/matsui528/sis)
 
 ## Citation
 
@@ -55,8 +59,8 @@ Now you can do the search via localhost:5000
     }
 
 ## Version note
-### v0 & acknowledgment
-Original source at sis: https://github.com/matsui528/sis thanks, matsui528!
+### v0 
+VGG16 Plus Flask
 ### v1
 Add annoy(approximate nearest neighbor, oh yeah!), speed up the query time extremely. and update the dataset incluing [Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/), [Book Covers Dataset](https://www.kaggle.com/lukaanicin/book-covers-dataset), totally 64,251 images. 
 ### todo 
