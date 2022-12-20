@@ -13,9 +13,6 @@ You can launch the system just by running two python scripts.
 - `server.py`: This script runs a web-server. You can send your query image to the server via a Flask web-intereface. Then relevant images to the query are retrieved by approximate nearest neighbor search Annoy.
 - We tested Generic-CBIR on Ubuntu 18.04 with Python3.
 
-## Links
-
-
 ## Usage
 Clone the code and install libraries
 ```bash
