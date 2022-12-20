@@ -14,7 +14,7 @@ You can launch the system just by running two python scripts.
 - We tested Generic-CBIR on Ubuntu 18.04 with Python3.
 
 ## Links
-- [Tutorial](https://ourcodeworld.com/articles/read/981/how-to-implement-an-image-search-engine-using-keras-tensorflow-with-python-3-in-ubuntu-18-04) and [Video](https://www.youtube.com/watch?v=Htu7b8PUyRg) by [@sdkcarlos](https://github.com/sdkcarlos)
+
 
 ## Usage
 Clone the code and install libraries
@@ -44,6 +44,7 @@ $ flask run --without-threads
 Now you can do the search via localhost:5000
 
 ## Acknowledgment
-[ANNOY](https://github.com/spotify/annoy) 
-[VGG16](https://arxiv.org/abs/1409.1556)  
-[Flask](https://github.com/matsui528/sis)  
+[ANNOY](https://github.com/spotify/annoy)     
+[VGG16](https://arxiv.org/abs/1409.1556)    
+[Flask](https://github.com/matsui528/sis)      
+[Tutorial](https://ourcodeworld.com/articles/read/981/how-to-implement-an-image-search-engine-using-keras-tensorflow-with-python-3-in-ubuntu-18-04) and [Video](https://www.youtube.com/watch?v=Htu7b8PUyRg) by [@sdkcarlos](https://github.com/sdkcarlos)
