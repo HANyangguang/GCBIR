@@ -14,8 +14,6 @@ You can launch the system just by running two python scripts.
 - We tested Generic-CBIR on Ubuntu 18.04 with Python3.
 
 ## Links
-- [Demo](#)
-- [Video](#)
 - [Tutorial](https://ourcodeworld.com/articles/read/981/how-to-implement-an-image-search-engine-using-keras-tensorflow-with-python-3-in-ubuntu-18-04) and [Video](https://www.youtube.com/watch?v=Htu7b8PUyRg) by [@sdkcarlos](https://github.com/sdkcarlos)
 
 ## Usage
@@ -46,22 +44,6 @@ $ flask run --without-threads
 Now you can do the search via localhost:5000
 
 ## Acknowledgment
-[ANNOY](https://github.com/spotify/annoy)
-[VGG16](https://arxiv.org/abs/1409.1556)
-[Flask](https://github.com/matsui528/sis)
-
-## Citation
-
-    @misc{GCBIR,
-	    author = {Yangguang Han},
-	    title = {GCBIR: Generic Content-based Image Retrieval System},
-	    howpublished = {\url{https://github.com/HANyangguang/GCBIR}}
-    }
-
-## Version note
-### v0 
-VGG16 Plus Flask
-### v1
-Add annoy(approximate nearest neighbor, oh yeah!), speed up the query time extremely. and update the dataset incluing [Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/), [Book Covers Dataset](https://www.kaggle.com/lukaanicin/book-covers-dataset), totally 64,251 images. 
-### todo 
-dimensional reducion of the 4096d feature without losing much information.
+[ANNOY](https://github.com/spotify/annoy) 
+[VGG16](https://arxiv.org/abs/1409.1556)  
+[Flask](https://github.com/matsui528/sis)  
